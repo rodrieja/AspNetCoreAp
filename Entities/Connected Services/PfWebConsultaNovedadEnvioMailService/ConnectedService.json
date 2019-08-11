@@ -1,0 +1,21 @@
+﻿{
+  "ProviderId": "Microsoft.VisualStudio.ConnectedService.Wcf",
+  "Version": "15.0.30515.712",
+  "GettingStartedDocument": {
+    "Uri": "https://go.microsoft.com/fwlink/?linkid=858517"
+  },
+  "ExtendedData": {
+    "inputs": [
+      "http://172.28.195.215:9080/COBISCorp.eCOBIS.PfWebConsultaNovedadEnvioMail.Service/PfWebConsultaNovedadEnvioMailWSService/PfWebConsultaNovedadEnvioMailWSService.wsdl"
+    ],
+    "collectionTypes": [
+      "System.Array",
+      "System.Collections.Generic.Dictionary`2"
+    ],
+    "namespaceMappings": [
+      "*, PfWebConsultaNovedadEnvioMailService"
+    ],
+    "targetFramework": "netcoreapp2.2",
+    "typeReuseMode": "All"
+  }
+}
