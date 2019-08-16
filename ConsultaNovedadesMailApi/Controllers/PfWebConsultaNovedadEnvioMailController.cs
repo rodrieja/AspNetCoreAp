@@ -33,14 +33,9 @@ namespace ConsultaNovedadesMailApi.Controllers
         }
 
         [HttpGet("NovedadEnvioMail")]
-        public ActionResult<IEnumerable<PfWebConsultaNovedadEnvioMailResponse>> GetPfWebConsultaNovedadEnvioMailString(string isSiguiente)
+        public ActionResult<IEnumerable<PfWebConsultaNovedadEnvioMailResponse>> GetPfWebConsultaNovedadEnvioMailString([FromQuery]PfWebConsultaNovedadEnvioMailFil inputParams)
         {
-            PfWebConsultaNovedadEnvioMailFil mailFil = new PfWebConsultaNovedadEnvioMailFil
-            {
-                isSiguiente = string.IsNullOrEmpty(isSiguiente) ? "0" : isSiguiente
-            };
-
-            this.fil = mailFil;
+            this.fil = inputParams;
 
             return GetResponse();
         }
